@@ -1,0 +1,97 @@
+.features{
+
+    @include breakpoint-up(lg){
+        display: flex;
+        padding-left: 10.25rem;
+        padding-right: 10.25rem;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50.875rem;
+            height: 50.875rem;
+            left: -30rem;
+            top: 63rem;
+            background-image: url(/images/bg-tablet-pattern.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    &__text{
+        text-align: center;
+        margin-bottom: 3.625rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        position: relative;
+        z-index: 2;
+
+        @include breakpoint-up(md){
+            padding-right: 3.5rem;
+            padding-left: 3.5rem;
+        }
+
+        @include breakpoint-up(lg){
+            text-align: left;
+            padding-left: 0px;
+            padding-right: 8.75rem;
+        }
+    }
+
+    &__group{
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item{
+        padding-left: 1rem;
+        margin-bottom: 3.125rem;
+
+        @include breakpoint-up(md){
+            padding-left: 3.5rem;
+        }
+
+        @include breakpoint-up(lg){
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        p{
+            padding-right: 1.5rem;
+
+            @include breakpoint-up(md){
+                padding-right: 3.5rem;
+            }
+
+            @include breakpoint-up(lg){
+                padding-right: 0px;
+                padding-left: 5.223rem;;
+            }
+        }
+        
+    }
+
+    &__header{
+        margin-bottom: 1.25rem;
+        background-color: $veryPaleRed;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        @include breakpoint-up(md){
+            background: none;
+        }
+    }
+
+    &__label{
+        background-color: $brightRed;
+        padding: 0.75rem 1.5625rem;
+        border-radius: 50px;
+        margin-right: 1rem;
+        line-height: 1;
+        color: $white;
+        
+    }
+
+    
+}
